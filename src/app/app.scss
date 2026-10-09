@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1e293b;
+
+  a {
+    color: #e2e8f0;
+    text-decoration: none;
+  }
+
+  .brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+
+    &.active {
+      color: #38bdf8;
+    }
+  }
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: #64748b;
+}
