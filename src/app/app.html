@@ -1,1 +1,13 @@
-<router-outlet />
+<header>
+  <a routerLink="/" class="brand">My Site</a>
+  <nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer>&copy; 2026 My Site</footer>
